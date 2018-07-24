@@ -1,0 +1,61 @@
+\begin{thebibliography}{10}
+
+\bibitem{AFDC}
+Emissions from Hybrid and Plug-In Electric Vehicles,
+  \url{https://www.afdc.energy.gov/vehicles/electric_emissions.php}.
+
+\bibitem{Campanari:JPS09}
+S.~Campanari, G.~Manzolini, and F.~G. de~la Iglesia, ``Energy analysis of
+  electric vehicles using batteries or fuel cells through well-to-wheel driving
+  cycle simulations,'' {\em Journal of Power Sources}, 2009.
+
+\bibitem{Khaligh:TVT12}
+A.~Khaligh and S.~Dusmez, ``Comprehensive topological analysis of conductive
+  and inductive charging solutions for plug-in electric vehicles,'' {\em
+  Transactions on Vehicular Technology}, 2012.
+
+\bibitem{FHWA}
+Federal Highway Administration (FHWA),
+  \url{https://www.fhwa.dot.gov/policyinformation/}.
+
+\bibitem{EIA}
+US Energy Information Administration (EIA),
+  \url{https://www.eia.gov/electricity/}.
+
+\bibitem{Burress:OAK_RIDGE16}
+T.~Burress tech. rep., Oak Ridge National Laboratory.
+
+\bibitem{Repair_cost}
+Tesla Model S Aluminum Body: Why Repair Costs Are Higher,
+  \url{http://www.greencarreports.com}.
+
+\bibitem{Lin:ICCAD14}
+X.~Lin, Y.~Wang, P.~Bogdan, N.~Chang, and M.~Pedram, ``Reinforcement learning
+  based power management for hybrid electric vehicles,'' in {\em Proceedings of
+  IEEE/ACM International Conference on Computer-Aided Design (ICCAD)}, 2014.
+
+\bibitem{Vatanparvar:DAC15}
+K.~Vatanparvar and M.~A.~A. Faruque, ``Battery lifetime-aware automotive
+  climate control for electric vehicles,'' in {\em Proceedings of IEEE/ACM
+  Design Automation Conference (DAC)}, 2015.
+
+\bibitem{Markel:JPS02}
+T.~Markel, A.~Brooker, T.~Hendricks, V.~Johnson, and K.~Kelly, ``Advisor: a
+  systems analysis tool for advanced vehicle modeling,'' {\em Journal of Power
+  Sources}, 2002.
+
+\bibitem{Chang:ICCAD14}
+N.~Chang, D.~Baek, and J.~Hong, ``Power consumption characterization, modeling
+  and estimation of electric vehicles,'' in {\em Proceedings of IEEE/ACM
+  International Conference on Computer-Aided Design (ICCAD)}, 2014.
+
+\bibitem{Ribau:AE14}
+J.~P. Ribau, C.~M. Silva, and J.~M. Sousa, ``Efficiency, cost and life cycle
+  co2 optimization of fuel cell hybrid and plug-in hybrid urban buses,'' {\em
+  Applied Energy}, 2014.
+
+\bibitem{motor_eff}
+``Premium-efficiency motors.'' Government of Canada Publications,
+  \url{http://publications.gc.ca}, 2004.
+
+\end{thebibliography}

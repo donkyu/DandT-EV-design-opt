@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: draft.aux
+The style file: ieeetr.bst
+Database file #1: EV.bib
+I was expecting a `,' or a `}'---line 200 of file EV.bib
+ :  
+ :  Title = {Benchmarking EV and HEV Technologies},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty title in Burress:OAK_RIDGE16
+Warning--empty year in Burress:OAK_RIDGE16
+You've used 13 entries,
+            1876 wiz_defined-function locations,
+            535 strings with 5501 characters,
+and the built_in function-call counts, 1817 in all, are:
+= -- 140
+> -- 92
+< -- 0
++ -- 37
+- -- 24
+* -- 103
+:= -- 270
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 9
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 101
+empty$ -- 231
+format.name$ -- 24
+if$ -- 439
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 7
+newline$ -- 42
+num.names$ -- 8
+pop$ -- 71
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 40
+stack$ -- 0
+substring$ -- 0
+swap$ -- 7
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 8
+width$ -- 15
+write$ -- 92
+(There was 1 error message)
