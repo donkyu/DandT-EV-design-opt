@@ -1,0 +1,101 @@
+%\documentclass{article}
+\documentclass[onecolumn]{IEEEconf}
+%\usepackage{a4wide}
+\usepackage{enumitem}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\renewcommand{\figurename}{Fig.}
+\renewcommand*{\thetable}{\Roman{table}}
+
+\title{Response to the Reviewers' Comments}
+\begin{document}
+
+\maketitle
+
+The authors would like to thank the reviewers for the precious comments and suggestions on the technical contents and presentation of our manuscript ``Build Your Own EV: A Rapid Energy-Aware Synthesis of Electric Vehicles,'' submitted to IEEE Design and Test. This revised manuscript has been greatly improved thanks to the reviewers’ invaluable advices. We have revised the manuscript faithfully following the reviewers’ comments. We include the newly added or significantly modified parts in the revised version of the paper also in Response to Reviewers. We highlight the important technical content changes and set those parts in a red color in the revised paper. Detailed comments and corresponding corrections are listed below:\\
+
+\setlength{\parindent}{0cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Reviewer 1:}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{description}
+\item [C1: ] Section III and IV are intended to discuss the cross-layer optimization of CPS or EVs whereas (i) Section III is too brief in view of the extremely spanned domain of cyber physical systems. Consider merging it into Section IV and make the discussion more focused.  
+\item [R1: ] We merged Section III and Section IV. Also, we simplified the detailed description of cross-layer power optimization to focus on the design optimization of electric vehicles, then, we extend the description of related work. Please see the following modification.\\
+
+\underline{We modify the beginning of Section III in the manuscript as:}\\
+We have a lesson learned from the battery-operated embedded systems how cross-layer power optimization could push the efficiency of the entire system beyond the limitation of the individual components. Cross-layer power optimization can turn off unused components during runtime without appreciable degradation in the performance as long as the power manager is fully aware of the application context. 
+
+Fortunately, we can see new but strong initiatives for application-aware cross-layer design and management that attempt to reduce energy consumption of Cyber-physical systems by applying algorithms, tools and methodologies relevant to design automation and embedded low-power systems. 
+\textcolor{red}{For instance, the hybrid electric vehicles (HEV) improves fuel efficiency and performance but also increase management complexity. the HEV power management policy is optimized using reinforcement learning~[8].} Also, electric vehicles consume a non-negligible amount of battery energy for non-driving power components. Related study optimizes energy for heating, ventilation and air conditioning (HVAC) systems equipped in electric vehicles~[9].
+~\\
+
+\item [C2: ] (ii) Section IV presents only the application specific design-time optimization of EVs, which hardly justifies the intended discussion on cross-layer optimization of EVs. It is recommended that author either revise the title to center around the design-time optimization or enhance the section with a broader discussion on cross-layer optimization and add relevant references.
+\item [R2: ]  We changed the title of the merged Section (III and IV) as Design-Time Optimization of Electric Vehicles. The approach of this paper is to optimize the powertrain specification from the user-level behavior, which is a naturally cross-layer approach, but this article is no longer for a Cross-layer SI submission.
+~\\
+
+\item [C3: ] From the perspective of the vehicle manufacturers, the major benefit to limits the offered configurations for a particular model is to boost the yield and minimize the average cost per vehicle. Fully customizing the configuration on an individual basis places a very high requirement on the supply side that may have to fundamentally change the current way to produce and assemble vehicles to accommodate such need. This can lead to significant manufacturing cost increase for which the customers have to pay eventually. 
+\item [R3: ] Currently, many automobile manufacturers provide drivetrain options (engine, motor and battery size) for the same vehicles. This concept is more emphasized and more easier to implement for electric vehicles. Please watch the following video presented by BMW from 40 seconds to 1 minute 40 seconds: \\
+https://www.youtube.com/watch?v=xvaQMTcckSg, \\
+which emphasizes various battery capacity and motor capacity configurations. Moreover, we already described this in Section V of the original manuscript as follow:\\
+
+\textit{Automobile manufacturers usually provide multiple drivetrain options for the same vehicles. For example, Ford Super Duty pickup trucks have engine choices of a V8 gasoline, a V10 gasoline and a V8 Diesel. The same is true for 2018 Tesla Model S such as a 75 Kwh battery, a 100 kWh battery and a 100 kWh battery as well as different motor setups. Modern automobile manufacturing lines allow to manufacture heterogeneous models with multiple different trims on the same assembly line.}
+~\\
+
+\item [C4:] From the perspective of the customers, a commuting vehicle is not necessarily restricted to a single dedicated driving mission but subject to significantly varied and initially unforeseeable driving plans, which might account a remarkable share of ownership cost during its life cycle and trivialize the design-time optimization efforts. Please comment on these concerns.
+\item [R4: ] That's why the proposed algorithm does not present only one optimized powertrain specification but suggests various powertrain specifications to the user with the rapid synthesis. This feature allows the user to find powertrain specifications satisfying driving for other purposes besides the commuting.\\
+
+\underline{We modify the third paragraphs of Section V to clarify:}\\
+Fig. 4 shows a new electric vehicle selection function for non-tech-savvy customers. Customers are supposed to pick an electric vehicle model first, which is subjective to personal preference, but the major difference is customized energy consumption evaluation by a novel rapid energy-aware electric vehicle synthesis algorithm. The rapid synthesis algorithm starts from the customer’s daily life data, which is absolutely non-technical such as the home/work addresses, time to commute, and primary purpose of vehicle (work/leisure.) The result of the synthesis is 1) the powertrain configuration of the electric vehicle such as the traction motor power rating, gearbox ratio and battery capacity, 2) expected vehicle performance (the maximum acceleration, maximum velocity and driving range) and 3) MSRP. The synthesis algorithm allows the customers to try various choices in a short period of time such as the performance and driving range. 
+\textcolor{red}{The proposed algorithm does not present only one optimized powertrain specification but suggests various powertrain specifications to the user with the rapid synthesis. This feature allows the user to find powertrain specifications satisfying driving for other purposes besides the commuting.}
+The resultant energy consumption, the driving range and the required battery capacity to satisfy the driving range are not the OEM (original equipment manufacturers) standard values but the true customer-dependent values. 
+
+\end{description}
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Reviewer 2:}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{description}
+\item [C1: ] Sections I -- IV are not very focused and do not provide a great introduction into the tool that is presented. It starts by talking about pollution, misleading MPGe numbers, trying to enhance energy efficiency of vehicles, electric vehicle charging demand problems, and materials used to create the car and potential repair costs as potential issues with electric vehicles. But as far as I can tell, the main thing that tool provides is a way for consumers to easily choose vehicle options based on their user requirements and these sections should be focused on this. I had no idea what the paper was about until the tool was presented.
+\item [R1: ] Answer.\\
+~\\
+
+\item [C2: ] Would electric vehicle configuration recommendations change significantly if it takes into account driver profiles? For example if an aggressive driver hard brakes, quickly accelerates, etc., I'd imagine that it would be less energy efficient than a normal driver. Is there a way to incorporate this information (at least generally) into the tool? Also, is the tool freely available?
+\item [R2: ] We optimize the vehicle specification with a drive profile, which is synthesized based on driver preferences, road conditions, and so on. Therefore, driver's tendencies (or hard braking, rapid acceleration, etc.) are all 100\% reflected in the optimization of vehicle specification.\\
+
+\underline{We reflect reviewer’s comment in the fifth paragraph in Section V as:}\\
+Fig. 6 illustrates the rapid energy-aware electric vehicle synthesis flow. 
+Following the flow in Fig. 6, the algorithm extracts the required acceleration, top speed and driving range, which become hard constraints for the synthesis. The algorithm finds an electric vehicle powertrain configuration that fulfills the requirements while consuming the least amount of energy for the dedicated driving mission. 
+We first compute the generic energy consumption for a given customer-dependent driving profile, \textcolor{red}{which is synthesized based on road condition, driver preference and driver's tendency (or hard braking, rapid acceleration, etc.)} This requires running a vehicle simulator, but this is just one-time evaluation unlike the conventional method. The iterative steps basically are the same as the design space exploration like the conventional method by changing the motor power rating, gearbox ratio and the battery capacity discovering the resultant vehicle performance, energy consumption and the driving range. As we already computed the generic energy consumption, the iterative step simply requires multiplication operations instead of running the vehicle simulator. This drastically reduces the computation time. Once again, the resultant energy consumption, the driving range and the required battery capacity to satisfy the driving range are not the OEM standard values but the true customer-dependent values optimized for the given driving mission. 
+~\\
+
+\item [C3: ]  The English needs to be cleaned up. For example: Section II: “fuel efficiency thinking the driving range more importantly than fuel efficiency,”
+\item [R3: ] We modified the paragraph in Section II as:\\
+
+The absolute energy consumption per unit distance does not properly explain how the electric vehicles are well designed. 
+Energy per unit curb weight also has an important meaning especially for electric vehicles because the battery weight occupies a significant portion of the total curb weight. 
+%Owners generally want to have a larger capacity battery despite fuel efficiency thinking the driving range more importantly than fuel efficiency, due to many free charging stations and a low enough electricity price for now. 
+\textcolor{red}{Owners generally want to have a larger capacity battery despite low fuel efficiency. They think that the driving range is more important than fuel efficiency due to many free charging stations and a low enough electricity price for now.}
+However, such promotion will not last forever, and thus manufacturers cannot take the fuel efficiency lightly. Fuel efficiency directly impacts on the fully-charged range per unit battery capacity. \\
+~\\
+
+\item [C4: ]  “Tesla Model S series show a higher energy efficiency per unit curb weight…” compared to what? There are models above and below the curve.
+\item [R4: ] Only Tesla Model S series are under the red line in Fig. 1(b), which means that Tesla Model S series show a higher energy efficiency per unit curb weight compared with others. \\
+
+\underline{We modified the sentence in Section II as:}\\
+However, Tesla Model S series show a higher energy efficiency per unit curb weight \textcolor{red}{than others (only Tesla Model S series are under the red line in Fig.~1(b))} thanks to aggressive deployment of light materials such as aluminum and carbon.
+~\\
+
+\item [C5: ] What does “virtually equivalent amount of power saving to make the component power close to zero if the active duty ratio of the component is low,” mean?
+\item [R5: ] The sentence means that we can reduce the component power close to zero by reducing active duty ratio of the component low. However, we removed this sentence in the revised version to simplify the description of Cross-layer optimization.\\
+~\\
+
+\end{description}
+
+\end{document}
+
+
+

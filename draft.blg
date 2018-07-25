@@ -10,36 +10,36 @@ I was expecting a `,' or a `}'---line 200 of file EV.bib
 I'm skipping whatever remains of this entry
 Warning--empty title in Burress:OAK_RIDGE16
 Warning--empty year in Burress:OAK_RIDGE16
-You've used 13 entries,
+You've used 12 entries,
             1876 wiz_defined-function locations,
-            535 strings with 5501 characters,
-and the built_in function-call counts, 1817 in all, are:
-= -- 140
-> -- 92
+            532 strings with 5385 characters,
+and the built_in function-call counts, 1732 in all, are:
+= -- 131
+> -- 91
 < -- 0
-+ -- 37
++ -- 36
 - -- 24
 * -- 103
-:= -- 270
-add.period$ -- 13
-call.type$ -- 13
+:= -- 264
+add.period$ -- 12
+call.type$ -- 12
 change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 101
-empty$ -- 231
+cite$ -- 14
+duplicate$ -- 97
+empty$ -- 216
 format.name$ -- 24
-if$ -- 439
+if$ -- 414
 int.to.chr$ -- 0
-int.to.str$ -- 13
+int.to.str$ -- 12
 missing$ -- 7
-newline$ -- 42
+newline$ -- 39
 num.names$ -- 8
-pop$ -- 71
+pop$ -- 66
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 40
+skip$ -- 34
 stack$ -- 0
 substring$ -- 0
 swap$ -- 7
@@ -49,6 +49,6 @@ top$ -- 0
 type$ -- 0
 warning$ -- 2
 while$ -- 8
-width$ -- 15
-write$ -- 92
+width$ -- 14
+write$ -- 87
 (There was 1 error message)
