@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.19)  25 JUL 2018 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.19)  26 JUL 2018 15:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -809,13 +809,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--217
 
  []
 
-<Figures/E_generic.pdf, id=294, 523.14587pt x 244.80962pt>
+[4] <Figures/E_generic.pdf, id=303, 523.14587pt x 244.80962pt>
 File: Figures/E_generic.pdf Graphic file (type pdf)
 
 <use Figures/E_generic.pdf>
 Package pdftex.def Info: Figures/E_generic.pdf used on input line 240.
 (pdftex.def)             Requested size: 252.0pt x 117.92564pt.
- [4]
+
 <Figures/Framework_proposed.pdf, id=304, 414.54875pt x 647.41875pt>
 File: Figures/Framework_proposed.pdf Graphic file (type pdf)
 
@@ -831,7 +831,7 @@ File: Figures/synthesis_results.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/synthesis_results.pdf used on input line 269.
 (pdftex.def)             Requested size: 464.39685pt x 180.34769pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4242) has occurred while \output is active []
 
  [5 <./Figures/E_generic.pdf> <./Figures/Framework_proposed.pdf>] (./draft.bbl)
  [6
@@ -840,7 +840,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Here is how much of TeX's memory you used:
  4663 strings out of 493089
  64725 string characters out of 6134841
- 158458 words of memory out of 5000000
+ 159458 words of memory out of 5000000
  8003 multiletter control sequences out of 15000+600000
  52053 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -854,7 +854,7 @@ ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on draft.pdf (6 pages, 3514567 bytes).
+Output written on draft.pdf (6 pages, 3514866 bytes).
 PDF statistics:
  468 PDF objects out of 1000 (max. 8388607)
  324 compressed objects within 4 object streams
