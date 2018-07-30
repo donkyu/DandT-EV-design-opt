@@ -26,8 +26,8 @@ All the modified sentences in the revised manuscript are highlighted in Red for 
 \item [C1: ] Section III and IV are intended to discuss the cross-layer optimization of CPS or EVs whereas (i) Section III is too brief in view of the extremely spanned domain of cyber physical systems. Consider merging it into Section IV and make the discussion more focused.  
 \item [R1: ] First of all, this article is for a \textbf{regular submission} of IEEE Design \& Test, but not for the special issue on Cross-Layer Design of CPS. We trimmed previously ``overly emphasized cross-layer optimization and CPS'' even if this article is naturally cross-layer in that we optimize the powertrain of EV (hardware layer) from the driver's specific profiles (application layer.)  
 
-We  merged Section III and Section IV as the reviewer advised. We also revised the titles of Sections: \textcolor{red}{I. Challenges in EV Efficiency Enhancement, II. Challenges in EV Efficiency Enhancement, and III. Design-Time Optimization of Electric Vehicles} focusing on the design-time optimization of electric vehicles. Now Sections II and III mainly explain the challenges and opportunities of EV power management with a conclusion such that personalized powertrain synthesis is promising for further push to EV power consumption saving.
-Please see the following modification.\\
+We  merged Section III and Section IV as the reviewer advised. We also revised the titles of Sections: \textcolor{red}{I. Challenges in EV Efficiency Enhancement, II. Challenges in EV Efficiency Enhancement, and III. Design-Time Optimization of Electric Vehicles} focusing on the design-time optimization of electric vehicles. Now Sections II and III mainly explain the challenges in the conventional EV power efficiency enhancement and opportunities of the proposed EV power management; the personalized powertrain synthesis is promising for further push to EV power consumption saving. We relocated and revised the last paragraph in Section I and keep focus on the demand for higher-efficiency electric vehicles.
+\\
 
 \underline{We modified the first paragraph of Section II as follows:}
 
@@ -61,7 +61,7 @@ We changed the title of the merged Section (III and IV) as \textsc{Design-Time O
 ~\\
 
 \item [C3: ] From the perspective of the vehicle manufacturers, the major benefit to limits the offered configurations for a particular model is to boost the yield and minimize the average cost per vehicle. Fully customizing the configuration on an individual basis places a very high requirement on the supply side that may have to fundamentally change the current way to produce and assemble vehicles to accommodate such need. This can lead to significant manufacturing cost increase for which the customers have to pay eventually. 
-\item [R3: ] Currently, almost all vehicle manufacturers provide drivetrain options (engine, motor and battery size) for the same modeles of vehicles. This concept is more emphasized and more easier to implement for electric vehicles. Please watch the following video presented by BMW from 40 seconds to 1 minute 40 seconds from BMW: \\
+\item [R3: ] Currently, almost all vehicle manufacturers provide drivetrain options (engine, motor and battery size) for the same models of vehicles. This concept is more emphasized and more easier to implement for electric vehicles. Please watch the following video presented by BMW from 40 seconds to 1 minute 40 seconds (by BMW): \\
 https://www.youtube.com/watch?v=xvaQMTcckSg, \\
 which emphasizes various battery capacity and motor capacity configurations. We already described this in Section V of the original manuscript as follow:\\
 
@@ -91,9 +91,7 @@ The resultant energy consumption, the driving range and the required battery cap
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{description}
 \item [C1: ] Sections I -- IV are not very focused and do not provide a great introduction into the tool that is presented. It starts by talking about pollution, misleading MPGe numbers, trying to enhance energy efficiency of vehicles, electric vehicle charging demand problems, and materials used to create the car and potential repair costs as potential issues with electric vehicles. But as far as I can tell, the main thing that tool provides is a way for consumers to easily choose vehicle options based on their user requirements and these sections should be focused on this. I had no idea what the paper was about until the tool was presented.
-\item [R1: ] We thank to the reviewer to provide such a valuable comment. We merged Section III and Section IV. We also revised the titles of Sections: I. Challenges in EV Efficiency Enhancement, II. Challenges in EV Efficiency Enhancement, and III. Design-Time Optimization of Electric Vehicles, focusing on the design-time optimization of electric vehicles. Now Sections II and III mainly explain the challenges in the conventional EV power efficiency enhancement and opportunities of the proposed EV power management; the personalized powertrain synthesis is promising for further push to EV power consumption saving. We relocated and revised the last paragraph in Section I and keep focus on the demand for higher-efficiency electric vehicles.
-
-We performed major revision in Sections II and III (previously Sections II and IV.)
+\item [R1: ] We thank to the reviewer to provide such a valuable comment. We relocated and revised the last paragraph in Section I and keep focus on the demand for higher-efficiency electric vehicles. We performed major revision in Sections II and III (previously Sections II to IV). We merged Section III and Section IV. We also revised the titles of Sections: I. Challenges in EV Efficiency Enhancement, II. Challenges in EV Efficiency Enhancement, and III. Design-Time Optimization of Electric Vehicles, focusing on the design-time optimization of electric vehicles. Now Sections II and III mainly explain the challenges in the conventional EV power efficiency enhancement and opportunities of the proposed EV power management; the personalized powertrain synthesis is promising for further push to EV power consumption saving. 
 
 
 \underline{We modified the first paragraph of Section II as follows:}
@@ -124,7 +122,7 @@ Such design-time optimization for a dedicated application scenario can significa
 \item [C2: ] Would electric vehicle configuration recommendations change significantly if it takes into account driver profiles? For example if an aggressive driver hard brakes, quickly accelerates, etc., I'd imagine that it would be less energy efficient than a normal driver. Is there a way to incorporate this information (at least generally) into the tool? Also, is the tool freely available?
 \item [R2: ] The optimization input is not  the driver's profile. We optimize the powertrain specification with the actual \textbf{driving profile}, a complete vehicle speed trace over time, which fully reflects both road condition and driver's habits (harsh and frequent braking, rapid acceleration, etc.)
 
-\underline{We reflect reviewer's comment in the fifth paragraph in Section V as:}\\
+\underline{We reflected the reviewer's comment in the fifth paragraph of Section V as follows:}
 
 Fig.~6 illustrates the rapid energy-aware electric vehicle synthesis flow. 
 Following the flow in Fig.~6, the algorithm extracts the required acceleration, top speed and driving range, which become hard constraints for the synthesis. The algorithm finds an electric vehicle powertrain configuration that fulfills the requirements while consuming the least amount of energy for the dedicated driving mission. 
