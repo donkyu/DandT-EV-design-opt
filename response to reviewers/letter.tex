@@ -128,7 +128,7 @@ Such design-time optimization for a dedicated application scenario can significa
 
 Fig.~6 illustrates the rapid energy-aware electric vehicle synthesis flow. 
 Following the flow in Fig.~6, the algorithm extracts the required acceleration, top speed and driving range, which become hard constraints for the synthesis. The algorithm finds an electric vehicle powertrain configuration that fulfills the requirements while consuming the least amount of energy for the dedicated driving mission. 
-We first compute $E_{generic}$ for a given customer-dependent driving profile, \textcolor{red}{\textit{i.e.} the  vehicle speed trace over time or distance resultant from both road condition and driver's habits (harsh and frequent braking, rapid acceleration, etc.)} This requires running a vehicle simulator, but this is just one-time evaluation unlike the conventional method.
+We first compute $E_{generic}$ for a given customer-dependent driving profile, \textcolor{red}{\textit{i.e.} the  vehicle speed trace over time or distance resultant from both road condition and driver's habits (harsh and frequent braking, rapid acceleration, etc.) Derivation of $E_{Generic}$ still requires running a vehicle simulator but only once unlike the conventional methods that iteratively run the vehicle simulator.} 
 
 \item [C3: ]  The English needs to be cleaned up. For example: Section II: fuel efficiency thinking the driving range more importantly than fuel efficiency,
 \item [R3: ] We modified the sentence in Section II as:\\
