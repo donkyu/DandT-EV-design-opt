@@ -34,7 +34,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Motivation} \label{sec:motivation}
+\section{\textcolor{red}{Demand for Higher-Efficiency Electric Vehicles}} \label{sec:motivation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 There are direct financial benefits from driving electric vehicles even excluding Government subsidies, tax deduction and toll discounts. A higher fuel efficiency and a low maintenance reduce the total cost of ownership. %~\cite{Hagman:RTBM16, Wu:EP15}. 
@@ -54,7 +54,7 @@ Unfortunately, MPGe can largely mislead the energy efficiency of electric vehicl
 %\end{figure}      
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\textcolor{red}{Demand for Higher-Efficiency Electric Vehicles}}
+%\section{\textcolor{red}{Demand for Higher-Efficiency Electric Vehicles}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Electric vehicle energy efficiency should be significantly enhanced from the electric energy demand and supply standpoint. Except extraordinary countries with abundant renewable energy such as Norway, Government should reinforce electricity generation facilities, both in energy and power capacity, for a successful and sustainable deployment of electric vehicles. 
@@ -73,37 +73,51 @@ Tesla Supercharger V3 is over 350 kW that is equivalent to 175 of 1.5-ton split 
 \label{fig:fuel_efficiency}
 \end{figure}      
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textcolor{red}{Challenges in EV Efficiency Enhancement}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textcolor{red}{However, it is very challenging to achieve a higher fuel efficiency of EV from further efficiency enhancement of the major electric powertrain components such as traction motors, power converters, batteries, and so on. This is simply because they already exhibit a high efficiency (commonly well over 90\%), and thus the headroom for further enhancement is very narrow.}
+
 We observe that the vehicle fuel efficiency is strongly dependent on the curb weight. 
 %This argument generally applies to all the vehicles. 
-Even engine vehicle fuel economy is largely dependent on the vehicle curb weight though the variance is somewhat large as shown in Fig.~\ref{fig:fuel_efficiency}(a). In contrast, electric vehicle power efficiency is mostly determined by the vehicle curb weight with a much smaller variance as shown in Fig.~\ref{fig:fuel_efficiency}(b). The energy consumption of electric vehicles per unit distance, i.e., energy efficiency, is a more on a linear line than that of gasoline vehicles.  
-
-The absolute energy consumption per unit distance does not properly explain how the electric vehicles are well designed. 
+Even engine vehicle fuel economy is largely dependent on the vehicle curb weight though the variance is somewhat large as shown in Fig.~\ref{fig:fuel_efficiency}(a). In contrast, electric vehicle power efficiency is mostly determined by the vehicle curb weight with a much smaller variance as shown in Fig.~\ref{fig:fuel_efficiency}(b). 
+%The energy consumption of electric vehicles per unit distance, i.e., energy efficiency, is a more on a linear line than that of gasoline vehicles.  
+%The absolute energy consumption per unit distance does not properly explain how the electric vehicles are well designed. 
 Energy per unit curb weight also has an important meaning especially for electric vehicles because the battery weight occupies a significant portion of the total curb weight. 
+\textcolor{red}{EV owners generally want to have a larger capacity battery for a longer driving range, but range extension installing a larger battery makes the EV efficiency worse as the battery occupies a major portion of the curb weight.}
 %Owners generally want to have a larger capacity battery despite fuel efficiency thinking the driving range more importantly than fuel efficiency, due to many free charging stations and a low enough electricity price for now. 
-\textcolor{red}{Many electric vehicle owners prefer to have a larger capacity battery without recognizing a reduced fuel efficiency due to the increased vehicle weight. Some of them take into account the driving range more importantly than fuel efficiency due to many free charging stations and a low enough electricity price for now.}
-However, such promotion will not last forever, and thus manufacturers cannot take the fuel efficiency lightly. Fuel efficiency directly impacts on the fully-charged range per unit battery capacity. 
+%\textcolor{red}{Many electric vehicle owners prefer to have a larger capacity battery without recognizing a reduced fuel efficiency due to the increased vehicle weight. Some of them take into account the driving range more importantly than fuel efficiency due to many free charging stations and a low enough electricity price for now.}
+%However, such promotion will not last forever, and thus manufacturers cannot take the fuel efficiency lightly. Fuel efficiency directly impacts on the fully-charged range per unit battery capacity. 
 %% Connection from the well-to-wheel efficiency in Introduction. 
-\textcolor{red}{Electric vehicles also contribute to air pollution because of the well-to-wheel efficiency mentioned above, fuel efficiency of electric vehicles does matter.}
-
+%\textcolor{red}{Electric vehicles also contribute to air pollution because of the well-to-wheel efficiency mentioned above, fuel efficiency of electric vehicles does matter.}
 
 Tesla Model S series consume more energy per unit distance than other electric vehicles because they have heavier curb weights due to a significantly larger battery capacity. Fig.~\ref{fig:fuel_efficiency}(b) justifies that longer range electric vehicles are generally less fuel efficient. However, Tesla Model S series show a higher energy efficiency per unit curb weight 
 %% Why did you add the following?
 %\textcolor{red}{than others (only Tesla Model S series are under the red line in Fig.~\ref{fig:fuel_efficiency}(b))} 
 thanks to aggressive deployment of light materials such as aluminum and carbon.  
-This implies that use of more light materials is a practically applicable practice for a higher fuel efficiency. Manufacturers do not generally include repair cost in the cost of ownership assuming no accidents. However, deployment of lighter materials potentially increase the total cost of ownership way more than the vehicle price itself due to extremely high repair cost. %\cite{Repair_cost}. 
-To make a long story short, curb weight is a big matter of electric vehicle fuel efficiency, but use of light materials may significantly increase the potential cost of ownership.
+This implies that use of more light materials is a practically applicable practice for a higher fuel efficiency. Manufacturers do not generally include repair cost in the cost of ownership assuming no accidents. However, deployment of lighter materials potentially increase the total cost of ownership way more than the vehicle price itself due to extremely high repair cost, \textcolor{red}{and thus eventually a higher cost of ownership.} %\cite{Repair_cost}. 
+%To make a long story short, curb weight is a big matter of electric vehicle fuel efficiency, but use of light materials may significantly increase the potential cost of ownership.
+
+
+%Cross-layer power optimization can turn off unused components during runtime without appreciable degradation in the performance as long as the power manager is fully aware of the application context. 
+%This may result in virtually equivalent amount of power saving to make the component power close to zero if the active duty ratio of the component is low. Cross-layer system-level power optimization is becoming more and more important as devices and circuit technologies are matured, and the headroom for further optimization is very narrow. 
+%Likewise, a tailored powertrain specification setup for a dedicated driving patterns for a particular EV owner can significantly enhance the fuel efficiency while meeting the owner's demands.}
+% This article introduces a powertrain customization for given driving purpose and, furthermore, a rapid synthesis of EV powertrain specifications.}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\textcolor{red}{Design-Time Optimization of Electric Vehicles}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We have a lesson learned from the battery-operated embedded systems how cross-layer power optimization could push the efficiency of the entire system beyond the limitation of the individual components. Cross-layer power optimization can turn off unused components during runtime without appreciable degradation in the performance as long as the power manager is fully aware of the application context. 
-%This may result in virtually equivalent amount of power saving to make the component power close to zero if the active duty ratio of the component is low. Cross-layer system-level power optimization is becoming more and more important as devices and circuit technologies are matured, and the headroom for further optimization is very narrow. 
-
-Fortunately, we can see new but strong initiatives for application-aware cross-layer design and management that attempt to reduce energy consumption of Cyber-physical systems by applying algorithms, tools and methodologies relevant to design automation and embedded low-power systems.
+We have a lesson learned from the battery-operated embedded systems how system-level power optimization could push the efficiency of the entire system beyond the limitation of the individual components. We see new but strong initiatives for \textcolor{red}{system-level power management for} cyber-physical systems by applying algorithms, tools and methodologies relevant to design automation and embedded low-power systems.
 \textcolor{red}{For instance, the hybrid electric vehicles (HEV) improves fuel efficiency and performance but also increase management complexity. the HEV power management policy is optimized using reinforcement learning~\cite{Lin:ICCAD14}.}
 Also, electric vehicles consume a non-negligible amount of battery energy for non-driving power components. Related study optimizes energy for heating, ventilation and air conditioning (HVAC) systems equipped in electric vehicles~\cite{Vatanparvar:DAC15}.
-\textcolor{red}{However, such attempts are classified as a runtime optimization of vehicles, \textit{e.g.}, power management of electric vehicles after designed and manufactured. In this article, we introduce a more proactive cross-layer power optimization, \textit{i.e.}, a design-time optimization. We synthesis the electric vehicle powertrain specifications by the user-specific driving patterns. Furthermore, we set up the optimization framework more practical. Our optimization does not make the final powertrain specification but instantly provide various selection choices showing range of information such as the top speed, maximum acceleration, fuel efficiency, vehicle price, and many more, thanks to the rapid synthesis technique.}
+\textcolor{red}{Such attempts are classified as a \textit{runtime optimization} of EV or HEV, \textit{e.g.}, power management of electric vehicles after designed and manufactured.}
+
+\textcolor{red}{In this article, we introduce a more proactive power optimization, \textit{i.e.}, a \textit{design-time optimization}. We synthesis the electric vehicle powertrain specifications by the user-specific driving patterns. Furthermore, we set up the optimization framework more practical. Our optimization does not make the final powertrain specification but instantly provide various selection choices showing range of information such as the top speed, maximum acceleration, fuel efficiency, vehicle price, and many more, thanks to the rapid synthesis technique.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Cross-layer power optimization of electric vehicles}
